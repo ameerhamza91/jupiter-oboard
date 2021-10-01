@@ -9,58 +9,74 @@
     <link href="/css/slick-theme.css" rel="stylesheet"> 
     <title>The Modernist</title>
 </head>
-<body>
+<body class="red-bg">
     <div id="wrapper">
         <header id="header">
-            <hr>
-            <div class="contanir padding">
-                <img src="/Img/logo.png" alt="logo"/>
-                <!-- <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">STYLE DEMO</a></li>
-                    <li><a href="#">FULL WIDTH</a></li>
-                    <li><a href="#">DROPDOWN</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                </ul> -->
-                <div class="nav">
-                    <input type="checkbox" id="nav-check">
-                  
-                    <div class="nav-btn">
-                      <label for="nav-check">
+            <div class="container">
+               <a href="index.html"><img src="/assets/logo.png" alt="logo"/></a>
+              <nav id="navigation">
+                    <input type="checkbox" id="navigation-check">
+
+                    <div class="navigation-btn">
+                      <label for="navigation-check">
                         <span></span>
                         <span></span>
                         <span></span>
                       </label>
                     </div>
-                    
-                    <div class="nav-links">
-                        <a href="#">HOME</a>
-                        <a href="#">STYLE DEMO</a>
-                        <a href="#">FULL WIDTH</a>
-                        <a href="#">DROPDOWN</a>
-                        <a href="#">PORTFOLIO</a>
-                        <a href="#">GALLERY</a>
-                    </div>
-                  </div>
+
+                        <ul class="navigation-links">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">STYLE DEMO</a></li>
+                            <li><a href="#">FULL WIDTH</a></li>
+                            <li><a href="#">DROPDOWN</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                        </ul>
+
+                </nav>
             </div>
         </header>
         <main id="main">
             <section>
                 <div id="wrap">
                     <ul id="slider">
-                      <li class="slide-item"><img src="/Img/banner.png" alt="banner"></li>
-                      <li class="slide-item"><img src="https://takblog.site/wp-content/themes/takblog/assets/img/blanks/post19_2.jpg" alt="画像"></li>
+                      <li class="slide-item banner-slide">
+                        <img src="/assets/banner.png" alt="banner">
+                        <div class="carousel-caption">
+                            <div class="banner-caption">
+                            <h1>Cursus penati
+                            saccum nulla.</h1>
+                            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                            </div>
+                            <div class="banner-img">
+                                <img class="product-img" src="/assets/banner-img.png" alt="banner product"/>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="slide-item banner-slide">
+                        <img src="/assets/banner.png" alt="banner">
+                        <div class="carousel-caption">
+                            <div class="banner-caption">
+                            <h1>Cursus penati
+                            saccum nulla.</h1>
+                            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                            </div>
+                            <div class="banner-img">
+                                <img src="/assets/banner-img.png" alt="banner product"/>
+                            </div>
+                          </div>
+                    </li>
                     </ul>
                   </div>
             </section>
-            <section class="section-gap red-bg">
-                <div class="contanir">
+            <section class="section-gap">
+                <div class="container">
                     <div class="services">
                         <ul>
                             <li>
                                 <div class="service-iner">
-                                    <img src="/Img/service-logo.png" alt="Servive logo" />
+                                    <img src="/assets/service-logo.png" alt="Servive logo" />
                                     <h1>SERVICE
                                         TITLE</h1>
                                         <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
@@ -68,7 +84,7 @@
                             </li>
                             <li>
                                 <div class="service-iner">
-                                    <img src="/Img/service-logo.png" alt="Servive logo" />
+                                    <img src="/assets/service-logo.png" alt="Servive logo" />
                                     <h1>SERVICE
                                         TITLE</h1>
                                         <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
@@ -76,7 +92,7 @@
                             </li>
                             <li>
                                 <div class="service-iner">
-                                    <img src="/Img/service-logo.png" alt="Servive logo" />
+                                    <img src="/assets/service-logo.png" alt="Servive logo" />
                                     <h1>SERVICE
                                         TITLE</h1>
                                         <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
@@ -84,7 +100,7 @@
                             </li>
                             <li>
                                 <div class="service-iner">
-                                    <img src="/Img/service-logo.png" alt="Servive logo" />
+                                    <img src="/assets/service-logo.png" alt="Servive logo" />
                                     <h1>SERVICE
                                         TITLE</h1>
                                         <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
@@ -95,8 +111,8 @@
                     <div class="clear"></div>
                 </div>
             </section>
-            <section class="section-gap red-bg">
-                <div class="contanir p-bt">
+            <section class="section-gap">
+                <div class="container">
                     <div class="latest-work">
                         <h1>Latest Works</h1>
                     </div>
@@ -104,37 +120,37 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="/Img/work-img-01.png" alt="latest Work">
+                                    <img src="/assets/work-img-01.png" alt="latest Work">
                                     <div class="work-name">LOREM IPSUM DOLOR</div>
                                 </a>
                             </li>
@@ -145,7 +161,7 @@
             </section>
         </main>
         <footer id="footer">
-            <div class="contanir flex">
+            <div class="container flex">
               <div class="blog">
                 <h4>From The Blog</h4>
                 <label>Post Title</label>
@@ -189,7 +205,7 @@
             </div>
             <hr class="copy-hr">
            <div class="copy-right">
-            <div class="contanir">
+            <div class="container">
                 <span class="domain">Copyright © 2013 Domain Name - All Rights Reserved</span>
                 <span class="template">Template by OS Templates</span>
             </div>
@@ -200,13 +216,13 @@
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script>
-    $(function(){
-  $("#slider").slick({
-    arrows: false,
-    autoplay: true,
-    pauseOnHover: true
+     $(function(){
+   $("#slider").slick({
+     arrows: false,
+     autoplay: true,
+     pauseOnHover: true
   });
-});
+ });
 
 </script>
 </body>

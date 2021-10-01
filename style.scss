@@ -8,29 +8,25 @@ $max-wid:960px;
 $size-h1:32px;
 body{
     margin: 0 auto;
-    padding: 0;
     font-family: 'Georgia';
+    font-size: 13px;
+    line-height: 17px;
 }
 #header{ 
+    border-top: 5px solid $cgreen-color;
     background:$mehron-color;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     z-index: 99;
+    padding: 30px 0px 25px 0px;
 }
-#header hr{
-    margin: 0 auto;
-    height: 5px;
-    border: 0;
-    background-color: $cgreen-color;
+#header a{
+    display: inline-block;
 }
-.contanir{
+.container{
     max-width: $max-wid;
     margin: 0 auto;
-}
-.padding{
-    padding: 42px 0px 20px 0px;
 }
 #header ul {
     list-style: none;
@@ -43,7 +39,6 @@ body{
     font-family: 'Georgia';
     font-size: 13px;
     font-weight: 300;
-    padding: 10px 20px;
 }
 #header ul li:hover {
     background: $cgreen-color;
@@ -52,6 +47,7 @@ body{
 #header ul li a{
     text-decoration: none;
     color: $white-color;
+    padding: 10px 15px;
 }
 #header ul li a:active{
     color: $white-color; 
@@ -60,11 +56,10 @@ body{
 #slider img{
     width: 100%;
     display: block;
-    height: 650px;
     object-fit: cover;
 }
 .section-gap{
-    padding-top: 60px;
+    padding: 60px 0;
 }
 .red-bg{
     background-color: $mehronlight-color;
@@ -72,10 +67,11 @@ body{
 .services ul{
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 .services ul li {
     width: 225px;
-    float: left;
     margin-right: 20px;
 }
 .services ul li:last-child {
@@ -98,6 +94,7 @@ body{
     font-weight: 400;
     color: $darkgry-Color;
     margin-bottom: 10px;
+    line-height: 40px;
 }
 .service-iner p{
     margin-top: 0;
@@ -105,6 +102,7 @@ body{
     text-align: center;
     color: $darkgry-Color;
     font-size: 12px;
+    line-height: 1.35;
 }
 .clear{
     clear: both;
@@ -125,6 +123,7 @@ body{
     text-align: center;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
 }
 .latest-work h1{
     background-color: $darkgry-Color;
@@ -147,10 +146,11 @@ body{
     z-index: -1;
 }
 .latest-product{
-    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .latest-product ul{
-    padding: 20px 0;
+    padding:0;
     list-style: none;
 }
 .latest-product ul li{
@@ -205,16 +205,19 @@ body{
 .blog label{
     color: $cgreen-color;
     font-size: 13px;
+    line-height: 14px;
 }
 .blog span{
     color: #979797;
     font-size: 10px;
-    font-weight: 400;  
+    font-weight: 400; 
+    line-height: 15px;
 }
 .blog p{
     font-size: 13px;
     color: #979797;
     line-height: 1.7;
+    margin-top: 5px;
 }
 .blog a{
     color: $cgreen-color;
@@ -328,7 +331,7 @@ body{
     width: 100%;
     margin: 0 auto;
     list-style: none;
-    padding: 106px 0 0 0;
+    padding: 93px 0 0 0;
 
   }
   .slide-item{
@@ -336,27 +339,27 @@ body{
       width: 100%;
     }  
   }
-  .nav {
+  #navigation {
     position: relative;
     float: right;
   }
   
-  .nav > .nav-header {
+  #navigation > .navigation-header {
     display: inline;
   }
   
-  .nav > .nav-header > .nav-title {
+  #navigation > .navigation-header > .navigation-title {
     display: inline-block;
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
   }
   
-  .nav > .nav-btn {
+  #navigation > .navigation-btn {
     display: none;
   }
   
-  .nav > .nav-links {
+  #navigation > .navigation-links {
     display: flex;
     float: right;
     font-size: 13px;
@@ -364,7 +367,7 @@ body{
     flex-wrap: nowrap;
   }
   
-  .nav > .nav-links > a {
+  #navigation > .navigation-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
@@ -372,19 +375,57 @@ body{
   }
   
   
-  .nav > #nav-check {
+  #navigation > #navigation-check {
     display: none;
   }
+  .banner-slide{
+      position: relative;
+  }
+  .banner-caption {
+    max-width: 50%;
+}
+.banner-img {
+    width: 50%;
+}
+.banner-img img {
+    width: 100%;
+}
+  .carousel-caption h1 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 118px;
+    margin-bottom: 24px;
+    line-height: 70px;
+}
+.banner-caption p {
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
+    font-size: 16px;
+    color: #9a9a9a;
+}
+  .carousel-caption {
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    max-width: 1100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
 // Mobile Responsive Css
 @media (max-width:1024px) {
     #slider img{
-    height: 450px;
+    height: 420px;
 }
 }
 
 @media only screen and (max-width: 999px) and (min-width: 768px)  {
     #slider img{
-    height: 450px;
+    height: 380px;
 }
 .padding{
     padding: 20px !important;
@@ -395,7 +436,7 @@ body{
 .services ul li {
     margin-bottom: 20px;
 }
-.contanir{
+.container{
     padding: 0 20px;
 }
 .latest-product ul li {
@@ -422,30 +463,36 @@ body{
 }
 }
 
-@media (max-width:600px) {
-    .nav > .nav-btn {
+@media (max-width:768px) {
+    #navigation > .navigation-btn {
       display: inline-block;
       position: absolute;
       right: 0px;
       top: 0px;
     }
-    .nav > .nav-btn > label {
+    #header ul{
+        float: none;
+    }
+    #header ul li{
+        float: none;
+    }
+    #navigation > .navigation-btn > label {
       display: inline-block;
       width: 25px;
     height: 25px;
     padding: 12px;
 }
     
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    #navigation > .navigation-btn > label:hover,#navigation  #navigation-check:checked ~ .navigation-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
     }
-    .nav > .nav-btn > label > span {
+    #navigation > .navigation-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
     }
-    .nav > .nav-links {
+    #navigation > .navigation-links {
       position: absolute;
       display: block;
       width: 100%;
@@ -456,14 +503,14 @@ body{
       top: 50px;
       right: 0px;
     }
-    .nav > .nav-links > a {
+    #navigation > .navigation-links > a {
       display: block;
     }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
+    #navigation > #navigation-check:not(:checked) ~ .navigation-links {
       height: 0px;
     }
-    .nav > #nav-check:checked ~ .nav-links {
-        height: calc(50vh - 50px);
+    #navigation > #navigation-check:checked ~ .navigation-links {
+        height: auto;
         overflow-y: auto;
         width: 280px;
     
@@ -472,22 +519,30 @@ body{
 
 @media only screen and (max-width: 767px) and (min-width: 320px)  {
     #slider {
-        padding: 84px 0 0 0;
+        padding: 93px 0 0 0;
     }
     #slider img{
-    height: 150px;
+    height: 180px;
 }
 .services ul li:nth-child(3) {
     margin-right: 0px;
 }
+.carousel-caption h1{
+    margin: 0;
+    font-size: 28px;
+}
+.carousel-caption p{
+    font-size: 10px;
+}
 .services ul li {
     margin-bottom: 20px;
+    margin-right: 0;
     width: 100%;
 }
 .service-iner {
     max-width: 100%;
 }
-.contanir{
+.container{
     padding: 0 20px;
 }
 .latest-product ul li {
