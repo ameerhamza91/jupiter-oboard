@@ -10,22 +10,12 @@
     <title>2nd task</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <header id="header">
             <div class="container">
                 <a href="index.html"><img src="assets/logo.png" alt="logo"/></a>
-               <nav id="navigation">
-                     <input type="checkbox" id="navigation-check">
- 
-                     <div class="navigation-btn">
-                       <label for="navigation-check">
-                         <span></span>
-                         <span></span>
-                         <span></span>
-                       </label>
-                     </div>
- 
-                         <ul class="navigation-links">
+               <nav id="nav">
+                         <ul>
                              <li><a href="#">HOME</a></li>
                              <li><a href="#">ABOUT</a></li>
                              <li><a href="#">WORK</a></li>
@@ -39,8 +29,7 @@
              </div>
         </header>
         <main id="main">
-            <section>
-                <div id="wrap">
+            <section class="banner">
                     <ul id="slider">
                       <li class="slide-item banner-slide">
                         <img src="assets/banner.png" alt="banner">
@@ -56,10 +45,9 @@
                           </div>
                     </li>
                     </ul>
-                  </div>
             </section>
-            <section class="gap">
-                <div class="container about">
+            <section class="about gap">
+                <div class="container">
                     <h2>About Us</h2>
                     <P>Divide have don't man wherein air fourth. Own itself make have night won't make. 
                         A you under Seed appear which good give. Own give air without fowl moveth dry first 
@@ -70,45 +58,42 @@
                         </span>
                 </div>
             </section>
-            <section class="gap bg-color">
+            <section class="clients gap">
                 <div class="container">
-                    <div class="clients">
-                        <ul>
+                        <ul class="flex">
                             <li class="project">
-                                <span><img src="assets/project.png" /></span>
+                                <span><img src="assets/project.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>548</h5>
                                 <p>projects completed</p>
                             </div>
                              </li>
                              <li class="project">
-                                <span><img src="assets/clocke.png" /></span>
+                                <span><img src="assets/clocke.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>1465</h5>
                                 <p>WORKING HOURS</p>
                             </div>
                              </li>
                              <li class="project">
-                                <span><img src="assets/star.png" /></span>
+                                <span><img src="assets/star.png" alt="icon" /></span>
                                 <div class="project-text">
                                     <h5>612</h5>
                                 <p>POSITIVE FEEDBACKS</p>
                             </div>
                              </li>
                              <li class="project">
-                                <span><img src="assets/heart.png" /></span>
+                                <span><img src="assets/heart.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>735</h5>
                                 <p>HAPPY CLIENTS</p>
                             </div>
                              </li>
                         </ul>
-                    </div>
                 </div>
             </section>
-            <section>
-                <div id="gallery">
-                    <ul>
+            <section id="gallery">
+                    <ul class="flex">
                         <li class="gry-box">
                             <a href="#"><img src="assets/gallery-hover.png" alt="hover" /></a>
                         </li>
@@ -137,7 +122,6 @@
                     <div class="load-more">
                         <a href="#">load more work</a>
                     </div>
-                </div>
             </section>
 <section class="gap bg-Wcolor">
     <div class="container">
@@ -162,25 +146,25 @@
         </div>
     </div>
 </section>
-<footer id="footer">
-<div class="container gap">
-    <h2>Need a Project?</h2>
-    <p>Own itself make have night won't make. 
-        A you under Seed appear which good</p>
-        <diV id="project-form">
-            <form>
-                <input type="text" id="name" name="fullname" placeholder="Your Name">
-                <input type="email" id="email" name="youremail" placeholder="Your Email">
-                <input type="text" id="tittle" name="yourtittle" placeholder="Your Title">
-                <textarea id="message" name="message" rows="15" cols="145"> Message</textarea>
-              </form>
-              <button type="button" class="primery-btn">Send Message</button>
-        </diV>
-
-</div>
-</footer>
-
         </main>
+        <footer id="footer">
+            <div class="container gap">
+                <h2>Need a Project?</h2>
+                <p>Own itself make have night won't make.
+                    A you under Seed appear which good</p>
+                <diV id="project-form">
+                    <form class="flex">
+                        <input type="text" id="name" name="fullname" placeholder="Your Name">
+                        <input type="email" id="email" name="youremail" placeholder="Your Email">
+                        <input type="text" id="tittle" name="yourtittle" placeholder="Your Title">
+                        <textarea id="message" name="message" rows="15" cols="145"> Message</textarea>
+                        <button type="button" class="primery-btn">Send Message</button>
+                    </form>
+
+                </diV>
+
+            </div>
+        </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>

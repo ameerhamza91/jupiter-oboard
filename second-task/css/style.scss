@@ -9,26 +9,36 @@ $container:1170px;
 $center:0 auto;
 body{
     background: $light-gry;
-    margin: $center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    line-height: 17px;
+    margin: 0;
+    font: 13px/17px "Montserrat", sans-serif;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrapper{
+  width: 100%;
+  overflow: hidden;
 }
 .container{
     max-width: $container;
     margin: $center;
+    padding: 0 15px;
 }
 #header{ 
     background:$light-gry;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99;
-    padding: 30px 0 25px 0;
+    z-index: 1;
+    padding: 30px 0 25px;
 }
-#header a{
-    display: inline-block;
+.logo{
+  display: inline-block;
 }
+//#header a{
+//    display: inline-block;
+//}
 #header ul {
     list-style: none;
     margin: 0;
@@ -56,47 +66,42 @@ body{
 #header ul li a:hover{
     color: $cgreen-color; 
 }
-#navigation {
+#nav {
     position: relative;
     float: right;
   }
   
-  #navigation > .navigation-header {
+  #nav > .nav-header {
     display: inline;
   }
-  #navigation > .navigation-header > .navigation-title {
+  #nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
   }
-  #navigation > .navigation-btn {
-    display: none;
-  }
-  #navigation > .navigation-links {
+  #nav ul {
     display: flex;
     float: right;
     font-size: 13px;
     font-weight: 400;
     flex-wrap: nowrap;
   }
-  #navigation > .navigation-links > a {
+  #nav ul a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
   } 
-  #navigation > #navigation-check {
-    display: none;
-  }
-  #wrap{
-    background-color: #ddd;
-  }
+
+ .banner{
+   width: 100%;
+ }
   #slider{
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     list-style: none;
-    padding: 93px 0 0 0;
+    padding: 93px 0 0;
 
   }
   .slide-item{
@@ -135,7 +140,7 @@ body{
   z-index: 10;
   color: #fff;
   max-width: 1100px;
-  margin: 0 auto;
+  margin:0 auto;
   left: 0;
   right: 0;
   top: 24px;
@@ -161,16 +166,13 @@ h2{
     display: inline-block;
     margin-top: 40px;
 }
-.bg-color{
+.clients{
     background-color: $cgreen-color;
 }
 .clients ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 .clients ul li{
     flex: 0 0 25%;
@@ -201,8 +203,6 @@ h2{
     padding: 0;
     margin: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 #gallery ul li{
     width: 25%;
@@ -261,8 +261,6 @@ h2{
   margin: 0 auto;
 }
 #project-form form{
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
 }
@@ -295,65 +293,4 @@ h2{
   color: $white-color;
   padding: 15px 35px;
   cursor: pointer;
-}
-
-
-
-
-
-
-
-//Mobile Responsive Scss//
-@media (max-width:768px) {
-  #navigation > .navigation-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #header ul{
-      float: none;
-  }
-  #header ul li{
-      float: none;
-  }
-  #navigation > .navigation-btn > label {
-    display: inline-block;
-    width: 25px;
-  height: 25px;
-  padding: 12px;
-}
-  
-  #navigation > .navigation-btn > label:hover,#navigation  #navigation-check:checked ~ .navigation-btn > label {
-    background-color: rgba(0, 0, 0, 0.438);
-  }
-  #navigation > .navigation-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid $dark-brown;
-  }
-  #navigation > .navigation-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: $light-gry;
-    height: 0;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    right: 0;
-  }
-  #navigation > .navigation-links > a {
-    display: block;
-  }
-  #navigation > #navigation-check:not(:checked) ~ .navigation-links {
-    height: 0;
-  }
-  #navigation > #navigation-check:checked ~ .navigation-links {
-      height: auto;
-      overflow-y: auto;
-      width: 280px;
-  
-  }
 }
