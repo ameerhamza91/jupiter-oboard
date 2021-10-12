@@ -13,19 +13,22 @@
     <div id="wrapper">
         <header id="header">
             <div class="container">
-                <a class="logo" href="index.html"><img src="assets/logo.png" alt="logo"/></a>
-               <nav id="nav">
-                         <ul>
-                             <li><a href="#">HOME</a></li>
-                             <li><a href="#">ABOUT</a></li>
-                             <li><a href="#">WORK</a></li>
-                             <li><a href="#">process</a></li>
-                             <li><a href="#">services</a></li>
-                             <li><a href="#">testimonials</a></li>
-                             <li><a href="#">contact</a></li>
-                         </ul>
- 
-                 </nav>
+                <div class="nav-header flex">
+                    <a class="logo" href="index.html"><img src="assets/logo.png" alt="logo"/></a>
+                    <nav id="nav" class="flex">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">WORK</a></li>
+                            <li><a href="#">process</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">testimonials</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+
              </div>
         </header>
         <main id="main">
@@ -48,41 +51,44 @@
             </section>
             <section class="about gap">
                 <div class="container">
-                    <h2>About Us</h2>
-                    <P>Divide have don't man wherein air fourth. Own itself make have night won't make. 
-                        A you under Seed appear which good give. Own give air without fowl moveth dry first 
-                        heaven fruit, dominion she'd won't very all.
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <P>Divide have don't man wherein air fourth. Own itself make have night won't make.
+                            A you under Seed appear which good give. Own give air without fowl moveth dry first
+                            heaven fruit, dominion she'd won't very all.
                         </P>
                         <span>
                             <img src="assets/sign.png" alt="Signature" />
                         </span>
+                    </div>
+
                 </div>
             </section>
             <section class="clients gap">
                 <div class="container">
                         <ul class="flex">
-                            <li class="project">
+                            <li class="project flex">
                                 <span><img src="assets/project.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>548</h5>
                                 <p>projects completed</p>
                             </div>
                              </li>
-                             <li class="project">
+                             <li class="project flex">
                                 <span><img src="assets/clocke.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>1465</h5>
                                 <p>WORKING HOURS</p>
                             </div>
                              </li>
-                             <li class="project">
+                             <li class="project flex">
                                 <span><img src="assets/star.png" alt="icon" /></span>
                                 <div class="project-text">
                                     <h5>612</h5>
                                 <p>POSITIVE FEEDBACKS</p>
                             </div>
                              </li>
-                             <li class="project">
+                             <li class="project flex">
                                 <span><img src="assets/heart.png" alt="icon"  /></span>
                                 <div class="project-text">
                                     <h5>735</h5>
@@ -152,16 +158,24 @@
                 <h2>Need a Project?</h2>
                 <p>Own itself make have night won't make.
                     A you under Seed appear which good</p>
-                <diV id="project-form">
-                    <form class="flex">
-                        <input type="text" id="name" name="fullname" placeholder="Your Name">
-                        <input type="email" id="email" name="youremail" placeholder="Your Email">
-                        <input type="text" id="tittle" name="yourtittle" placeholder="Your Title">
-                        <textarea id="message" name="message" rows="15" cols="145"> Message</textarea>
+
+                    <form class="flex submit-form">
+                        <div class="project-form flex">
+                            <div class="form-control"><input type="text" placeholder="Your Name"></div>
+                            <div class="form-control"><input type="email" placeholder="Your Email"></div>
+                        </div>
+                        <div class="tittle-input">
+                            <input type="text" placeholder="Your Tittle">
+                        </div>
+                        <div class="message">
+                            <textarea  rows="15"> Message</textarea>
+                        </div>
+
+
                         <button type="button" class="primery-btn">Send Message</button>
                     </form>
 
-                </diV>
+
 
             </div>
         </footer>
