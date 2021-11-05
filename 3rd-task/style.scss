@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-$green: #91c938;
-$balck: #000;
-$light-gry:#999999;
-$darkgry: #242423;
-$light-darkgry: #2a2a2a;
-$white: #fff;
-$white-dule: #fcfcfc;
-$max-wid:1170px;
-$h1:24px;
+@import "variable";
 body{
   margin: 0;
   padding: 0;
@@ -28,6 +20,7 @@ p{
 }
 .container{
   max-width: $max-wid;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .nav-header {
@@ -39,23 +32,26 @@ p{
   right: 0;
   box-shadow: 0 3px 10px #58585824;
 }
-#nav{
+.nav{
   width: 100%;
 }
-#nav ul{
+.nav ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-#nav ul li {
+.nav ul li {
   padding: 10px 39px;
 }
-#nav ul li a{
+.nav ul li a{
 text-decoration: none;
   color: #2a2a2a;
 }
-#nav ul li a:hover{
+.nav ul li a:hover{
   color: $green;
+}
+.nav-links{
+  margin: 0 auto;
 }
 .logo{
   margin:12px 59px 0;

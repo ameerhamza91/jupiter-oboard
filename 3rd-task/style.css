@@ -20,6 +20,7 @@ p {
 
 .container {
   max-width: 1170px;
+  padding: 0 15px;
   margin: 0 auto; }
 
 .nav-header {
@@ -31,23 +32,26 @@ p {
   right: 0;
   box-shadow: 0 3px 10px #58585824; }
 
-#nav {
+.nav {
   width: 100%; }
 
-#nav ul {
+.nav ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-#nav ul li {
+.nav ul li {
   padding: 10px 39px; }
 
-#nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #2a2a2a; }
 
-#nav ul li a:hover {
+.nav ul li a:hover {
   color: #91c938; }
+
+.nav-links {
+  margin: 0 auto; }
 
 .logo {
   margin: 12px 59px 0; }
