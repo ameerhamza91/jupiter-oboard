@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "variable";
+body{
+  margin: 0;
+  padding: 0;
+  font: 400 13px/17px "Montserrat";
+}
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;}
+p{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+#wrapper {
+  width: 100%;
+}
+.container{
+  max-width: $max-wid;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.nav-header {
+  padding: 20px 0;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 10px #58585824;
+}
+.nav{
+  width: 100%;
+}
+.nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li {
+  padding: 10px 39px;
+}
+.nav ul li a{
+text-decoration: none;
+  color: #2a2a2a;
+}
+.nav ul li a:hover{
+  color: $green;
+}
+.nav-links{
+  margin: 0 auto;
+}
+.logo{
+  margin:12px 59px 0;
+}
+.logo a{
+  display: inline-block;
+}
+.banner{
+  padding-top: 77px;
+}
+.slider img{
+  width: 100%;
+}
+.services{
+  padding: 120px 0;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 22px;
+}
+.services ul{
+  list-style: none;
+  margin: 80px 0 0;
+  padding: 0;
+}
+.services ul li{
+  text-align: center;
+  max-width: 18%;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+.services ul li span{
+  display: inline-block;
+  margin-bottom: 15px;
+  height: 54px;
+}
+.services ul li span img {
+  width: auto;
+  height: 100%;
+}
+.services ul li h5{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.services ul li p{
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $light-darkgry;
+}
+.pricing{
+  padding: 120px 0;
+  background: $light-darkgry;
+}
+.pricing-head{
+  color: $white;
+  text-align: center;
+}
+.pricing-head p{
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: $light-gry;
+  padding: 0 50px;
+}
+.pricing ul{
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+  justify-content: space-between;
+}
+.pricing ul li{
+  text-align: center;
+  color: $light-gry;
+  max-width: 21%;
+  padding: 40px;
+  border: 1px solid $light-darkgry;
+  transition: background-color .5s;
+  transition: border .5s
+}
+.pricing ul li h3{
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $green;
+}
+.pricing ul li p{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 15px 0;
+  transition: color .5s
+}
+.line{
+  display: block;
+  width: 50%;
+  border: 1px  solid $green;
+  margin: 0 auto;
+  background: $green;
+}
+.dollar-price{
+  margin: 20px 0;
+  justify-content: center;
+}
+.dollar{
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px 4px 0 0;
+}
+.number{
+  color: $green;
+  font-size: 54px;
+  line-height: 58px;
+}
+.order-now{
+  background: none;
+  border: 1px solid $green;
+  padding: 10px 20px;
+  color: $green;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color .5s
+}
+.pricing ul li:hover{
+  background: $darkgry;
+  border: 1px solid $green;
+  border-radius: 4px;
+}
+.pricing ul li:hover p{
+  color: $white;
+}
+.pricing ul li:hover button{
+  background: $green;
+  color: $white;
+}
+.about-us{
+  padding: 100px 0;
+}
+.about-head{
+  margin-bottom: 40px;
+}
+.about-head p{
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 30px auto 0;
+  max-width: 850px;
+  color: $light-gry;
+}
+.about-us ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.about-us ul li{
+  text-align: center;
+  padding: 0 20px;
+}
+.about-us ul li h4{
+  margin: 15px 0 0;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 300;
+  color: $light-gry;
+}
+.about-us ul li p{
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 14px;
+  color: $light-gry;
+}
+.testimonial{
+  background: $green;
+  padding: 60px 0 0;
+}
+.client-text{
+  margin-top: 120px;
+  max-width: 50%;
+}
+.client-text p{
+  font-size: 28px;
+  line-height: 44px;
+  font-style: italic;
+  max-width: 80%;
+  font-weight: 300;
+  color: $white;
+}
+.client-text h6{
+  font-size:14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $white;
+}
+.client-img{
+  max-width: 50%;
+}
+.client-img img{
+  width: 100%;
+  display: inherit;
+}
+.choose-us{
+  padding: 100px 0;
+}
+.choose-us-head{
+  text-align: center;
+}
+.choose-us-head p {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 30px auto 0;
+  max-width: 850px;
+  color: #999999;
+}
+.icons{
+  margin-right: 30px;
+  height: 36px;
+}
+.icons img{
+  width: auto;
+  height: 100%;
+}
+.choose-us ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.choose-us ul li{
+  max-width: 30%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.choose-text{
+  padding-left: 15px;
+  border-left:2px solid $green;
+}
+.choose-text h5{
+  margin: 0;
+  padding: 0;
+}
+.choose-us p{
+  font-size: 12px;
+  font-weight: 400;
+  color: $light-gry;
+  margin-top: 5px;
+}
+.footer{
+  background: $darkgry;
+  padding: 100px 0 0;
+  justify-content: space-between;
+}
+.footer-data{
+  justify-content: space-between;
+}
+.footer-about{
+  max-width: 22%;
+}
+.footer-about h2 {
+  text-align: left;
+  color: $white;
+}
+.footer-about p{
+  font-size: 12px;
+  color: $light-gry;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.footer-links{
+  width: 15%;
+  flex-direction: column;
+}
+.links{
+  justify-content: space-between;
+}
+.footer-links h2{
+  text-align: left;
+  color: $white;
+}
+.footer-links ul{
+  list-style: none;
+  margin: 15px 0 0;
+  padding: 0;
+}
+.footer-links ul li{
+  margin-bottom: 10px;
+}
+.footer-links ul li a{
+  text-decoration: none;
+  color: $light-gry;
+}
+.footer-twitter{
+  max-width: 22%;
+}
+.footer-twitter h2 {
+  text-align: left;
+  color: $white;
+}
+.footer-twitter p{
+  color: $light-gry;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.footer-newsletter{
+  width: 25%;
+  flex-direction: column;
+}
+.footer-newsletter h2{
+  text-align: left;
+  color: $white;
+}
+
+.footer-newsletter input{
+  background: $darkgry;
+  border: 1px solid $light-gry;
+  padding: 10px;
+  margin-top: 15px;
+}
+.footer-newsletter button{
+  background: $green;
+  margin-top:10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+.copy-right{
+  margin-top: 50px;
+  background: #000;
+  color: $light-gry;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 12px;
+}
+.price-text {
+  margin: 0 !important;
+}
+.price-text li {
+  max-width: none !important;
+  padding: 16px 0 !important;
+  border: none !important;
+}
